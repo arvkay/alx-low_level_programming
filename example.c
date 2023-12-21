@@ -45,22 +45,17 @@ main()
 	printf("The result of short int is %d\n",sizeof(short int));
 	printf("The result of long int is %d\n",sizeof(long int));
 	printf("The result of long double is %d\n",sizeof(long double));
-	/*printf("The result of x+=y is %d\n",x+=y);
-	x = 1;
-	y = 3;
-	printf("The result of x+=-y is %d\n",x+=-y);
-	x = 1;
-	y = 3;
-	printf("The result of x-=y is %d\n",x-=y);
-	x = 1;
-	y = 3;
-	printf("The result of x-=-y is %d\n",x-=-y);
-	x = 1;
-	y = 3;
-	printf("The result of x*=y is %d\n",x*=y);
-	x = 1;
-	y = 3;
-	printf("The result of x*=-y is %d\n",x*=-y);*/
-	
+	float fahr, celsius; 
+ 	float lower, upper, step; 
+ 	lower = 0; /* lower limit of temperatuire scale */ 
+ 	upper = 300; /* upper limit 		*/ 
+ 	step = 20; /* step size */ 
+ 	celsius = lower; 
+	printf("Celcius   Fahrenheit\n");
+ 	while (celsius <= upper) {	 
+ 	fahr = (9.0/5.0) * celsius+32.0; 
+ 	printf("%8.0f %6.1f\n", celsius, fahr); 
+ 	celsius = celsius + step; 
+ 	} 
 	return 0;
 }
